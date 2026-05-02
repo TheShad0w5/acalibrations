@@ -24,14 +24,11 @@ body {
   color: white;
 }
 
-/* Smooth feel */
 a {
   transition: all 0.2s ease;
 }
 
-/* =========================
-   SCROLLBAR (optional but nice)
-========================= */
+/* Scrollbar */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -50,27 +47,9 @@ a {
   background: var(--gold-dark);
 }
 
-/* =========================
-   SELECTION COLOR
-========================= */
+/* Selection */
 
 ::selection {
   background: var(--gold);
   color: black;
-}
-
-/* =========================
-   UTILITY CLASSES (optional)
-========================= */
-
-.gold-text {
-  color: var(--gold);
-}
-
-.gold-bg {
-  background-color: var(--gold);
-}
-
-.gold-border {
-  border-color: var(--gold);
 }
