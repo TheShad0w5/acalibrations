@@ -1,33 +1,76 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   BRAND VARIABLES
+========================= */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gold: #d4af37;
+  --gold-dark: #b8962e;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* =========================
+   GLOBAL STYLES
+========================= */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
+  padding: 0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-body {
   background: radial-gradient(circle at top, #111 0%, #000 70%);
+  color: white;
 }
 
+/* Smooth feel */
 a {
   transition: all 0.2s ease;
+}
+
+/* =========================
+   SCROLLBAR (optional but nice)
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+/* =========================
+   SELECTION COLOR
+========================= */
+
+::selection {
+  background: var(--gold);
+  color: black;
+}
+
+/* =========================
+   UTILITY CLASSES (optional)
+========================= */
+
+.gold-text {
+  color: var(--gold);
+}
+
+.gold-bg {
+  background-color: var(--gold);
+}
+
+.gold-border {
+  border-color: var(--gold);
 }
