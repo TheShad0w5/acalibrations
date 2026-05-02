@@ -27,16 +27,16 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body <body className="bg-black text-white">
+      <body className="bg-black text-white">
   <header className="border-b border-zinc-900">
     <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-      
+
       <div className="font-black uppercase tracking-widest">
         A CALIBRATIONS
       </div>
 
       <nav className="flex gap-6 text-sm uppercase text-zinc-400">
-        <a href="#services" className="hover:text-white">Services</a>
+        <a href="/services" className="hover:text-white">Services</a>
         <a href="#" className="hover:text-white">Platforms</a>
         <a href="#" className="hover:text-white">Contact</a>
       </nav>
@@ -51,7 +51,7 @@ export default function RootLayout({
       © {new Date().getFullYear()} A Calibrations
     </div>
   </footer>
-</body></body>
+</body>
     </html>
   );
 }
